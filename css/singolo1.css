@@ -1,0 +1,249 @@
+html {
+    font-size: 10px;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Lato Regular', sans-serif;
+    font-size: 1.6rem;
+    background-color: white;
+}
+
+p {
+    margin: 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  
+  .container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  
+  /* header */
+  
+  .header {
+    padding: 34px 0 30px;
+    background-color: #2d303a;
+    border-bottom: solid 6px #323746;
+  }
+  
+  .header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: black;
+  }
+  
+  .header_logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -.55px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .header_logo span {
+    color: #f06c64;
+  }
+  
+  /* navigation */
+
+  .nav_list {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 700;
+  
+    color: white;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  
+  .nav_list_item {
+    margin-right: 29px;
+    cursor: pointer;
+    transition: color .2s linear;
+    position: relative;
+  }
+  
+  .nav_list_item::after {
+    content: "";
+    background-color: #434759;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+  
+    position: absolute;
+    top: 50%;
+    right: -16px;
+  
+    transform: translateY(-50%);
+  
+  }
+  
+  .nav_list_item:hover {
+    color: #f06c64;
+    text-decoration: underline;
+  }
+  
+  .nav_list_item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav_list_item:last-child::after {
+    width: 0;
+  }
+  
+  .nav_list_item-active {
+    color: #f06c64;
+  }
+  
+  /* slider block */
+  
+  .slider {
+    height: 600px;
+    background-color: #f06c64;
+    border-bottom: solid 6px #ea676b;
+  }
+  
+  .slider__inner {
+    position: relative;
+  }
+  
+  .slider__item {
+    display: flex;
+  }
+  
+/* phone image */
+
+  .phone_slider_one {
+    padding: 53px 0 0 72px;
+  }
+  
+  .phone_slider_twe {
+    padding: 174px 0 0 73px;
+  
+  }
+  
+  /* arrow */
+
+  .arrow_left {
+    position: absolute;
+    top: 52%;
+    left: 2px;
+    cursor: pointer;
+  }
+  
+  .arrow_right {
+    position: absolute;
+    top: 52%;
+    right: 0;
+    cursor: pointer;
+  }
+  
+  /* services block */
+  
+  .services {
+    padding: 63px 0 31px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #fff
+  }
+  
+  .services__title {
+    margin-bottom: 16px;
+    font-family: 'Lato Black', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #666d89;
+    word-spacing: -1.5px;
+  }
+  
+  .services__subtitle {
+    margin-bottom: 43px;
+  
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #767e9e;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: -.5px;
+  }
+  
+  .services__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .services__item {
+    margin-bottom: 30px;
+    width: 33%;
+    max-width: 299px;
+    max-height: 93px;
+    padding-left: 79px;
+  
+    overflow: hidden;
+  
+    position: relative;
+  }
+  
+  .services_circle {
+    
+   /*  background-image: url("..assets/images/ellipse.png"); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59px;
+    height: 59px;
+    padding: 15px;
+    border: 2px solid #666d89;
+    border-radius: 50%;
+  
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+  
+  
+  .services__item__title {
+    margin-bottom: 9px;
+  
+    color: #666d89;
+    font-family: "Lato Black";
+    font-size: 1.8rem;
+    font-weight: 400;
+  
+  }
+  .services__item__title-des {
+    letter-spacing: -.25px;
+  }
+  
+  .services__item__title-sup {
+    letter-spacing: -.5px;
+  }
+  
+  .services__item__text {
+  
+    color: #767e9e;
+    font-size: 1.2rem;
+    line-height: 21px;
+    text-align: justify;
+  }
+  
+  .services__item__text-sup {
+    letter-spacing: -.15px;
+  }
+
+
+
